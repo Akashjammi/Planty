@@ -9,3 +9,5 @@ IoT sensors
 Raspberry pi
 DeepLearning with Python
 JavaScript Game Engine PixiJS
+
+Find server side scripts in PlantyServer Repo
