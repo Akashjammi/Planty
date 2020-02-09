@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/topbar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/toolbar_bg"
+
+                >
+                <ImageView
+                    android:id="@+id/back_img2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/left_arrow"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    />
+                <com.planty.app.customviews.F1TextViewRegular
+                    android:id="@+id/texttoolbar"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Product Details"
+                    android:textSize="@dimen/text_large"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white2"
+                    android:layout_toRightOf="@+id/back_img2"
+
+                    />
+                <ImageView
+                    android:id="@+id/searchtb"
+                    android:layout_toLeftOf="@+id/cart_tb"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/search_white"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    />
+                <ImageView
+                    android:id="@+id/cart_tb"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/shopping_cart"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    />
+
+            </RelativeLayout>
+    <com.planty.app.customviews.F1TextViewRegular
+        android:layout_below="@+id/topbar"
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:paddingLeft="1dp"
+        android:text="Product name"
+        android:layout_marginTop="@dimen/margin_10"
+        />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/txt1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/rounded_edit_text"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:textSize="15dp"
+        android:maxLength="30"
+
+        />
+
+    <com.planty.app.customviews.F1TextViewRegular
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et1"
+        android:layout_marginLeft="15dp"
+        android:paddingLeft="1dp"
+        android:paddingTop="14dp"
+        android:text="Shop Name" />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/txt2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/rounded_edit_text"
+        android:maxLength="30"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:textSize="15dp" />
+
+    <com.planty.app.customviews.F1TextViewRegular
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et2"
+        android:layout_marginLeft="15dp"
+
+        android:paddingLeft="1dp"
+        android:paddingTop="14dp"
+        android:text="Shop Area" />
+
+    <EditText
+        android:id="@+id/et3"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/txt3"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/rounded_edit_text"
+android:maxLength="30"
+
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et3"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:weightSum="1">
+
+
+            <com.planty.app.customviews.F1TextViewRegular
+                android:id="@+id/txt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+
+                android:paddingLeft="1dp"
+                android:paddingTop="14dp"
+                android:text="MRP(SKU)" />
+
+            <EditText
+                android:id="@+id/et4"
+
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/rounded_edit_text"
+                android:maxLength="6"
+                android:popupBackground="@color/orange"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:spinnerMode="dialog"
+                android:textSize="15dp"
+
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:weightSum="1">
+
+
+            <com.planty.app.customviews.F1TextViewRegular
+                android:id="@+id/txt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+
+                android:paddingLeft="1dp"
+                android:paddingTop="14dp"
+                android:text="Logas Price (UPC)" />
+
+            <EditText
+                android:id="@+id/et5"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/rounded_edit_text"
+
+
+                android:inputType="number"
+                android:maxLength="6"
+                android:paddingLeft="10dp"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/liner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear2"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/linar"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:weightSum="1">
+
+
+            <com.planty.app.customviews.F1TextViewRegular
+                android:id="@+id/tt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:inputType="number"
+                android:paddingLeft="1dp"
+                android:paddingTop="14dp"
+                android:text="GST %" />
+
+            <EditText
+                android:id="@+id/t4"
+
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/rounded_edit_text"
+                android:inputType="number"
+                android:maxLength="2"
+                android:paddingLeft="10dp"
+                android:popupBackground="@color/orange"
+                android:spinnerMode="dialog"
+                android:textSize="15dp"
+
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linea3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:weightSum="2">
+
+
+            <com.planty.app.customviews.F1TextViewRegular
+                android:id="@+id/txt6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+
+                android:paddingLeft="1dp"
+                android:paddingTop="14dp"
+                android:text="HSN" />
+
+            <EditText
+                android:id="@+id/e5"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/rounded_edit_text"
+
+
+                android:inputType="number"
+                android:maxLength="4"
+                android:paddingLeft="10dp"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/liner2"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/linar5"
+                    android:layout_width="325dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingTop="5dp"
+                    android:weightSum="2">
+
+
+                    <com.planty.app.customviews.F1TextViewRegular
+                        android:id="@+id/tt55"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:inputType="number"
+                        android:paddingLeft="1dp"
+                        android:paddingTop="14dp"
+                        android:text="Stock Quantity" />
+
+                    <EditText
+                        android:id="@+id/t45"
+
+                        android:layout_width="140dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/rounded_edit_text"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:paddingLeft="10dp"
+                        android:popupBackground="@color/orange"
+                        android:spinnerMode="dialog"
+                        android:textSize="15dp"
+
+
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linea35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingTop="5dp"
+                    android:weightSum="2">
+
+                     <RelativeLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+
+                         >
+                    <com.planty.app.customviews.F1TextViewRegular
+
+                        android:id="@+id/txt56"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+
+                        android:paddingLeft="1dp"
+                        android:paddingTop="14dp"
+                        android:text="Product Offer" />
+
+                         <android.support.v7.widget.CardView
+
+                             android:id="@+id/cardyes"
+
+
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginTop="@dimen/margin_10"
+                             app:cardBackgroundColor="#f44242"
+                             android:layout_toLeftOf="@+id/nocard"
+
+                             >
+
+                             <TextView
+                                 android:layout_width="35dp"
+                                 android:layout_height="25dp"
+
+
+                                 android:gravity="center"
+                                 android:text="Yes"
+
+                                 android:textColor="@color/white2"
+
+
+                                 />
+                         </android.support.v7.widget.CardView>
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/nocard"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/margin_20"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                         <TextView
+
+                             android:layout_width="25dp"
+                             android:layout_height="25dp"
+                                android:text="No"
+                             android:background="@color/bg_grey_3"
+                             android:textColor="@color/bg_black"
+                             android:gravity="center"
+                             />
+                        </android.support.v7.widget.CardView>
+
+
+                     </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/e55"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/rounded_edit_text"
+
+
+                        android:inputType="number"
+                        android:maxLength="8"
+                        android:paddingLeft="10dp"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linar2"
+        android:layout_below="@+id/linar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        android:weightSum="2">
+
+
+        <com.planty.app.customviews.F1TextViewRegular
+            android:id="@+id/tsss5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+
+            android:paddingLeft="1dp"
+            android:paddingTop="14dp"
+            android:text="GST Number" />
+
+        <EditText
+            android:id="@+id/sa"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="2"
+            android:background="@drawable/rounded_edit_text"
+            android:maxLength="15"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+
+
+            android:textSize="15dp"
+
+
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linar3"
+        android:layout_below="@+id/linar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        android:weightSum="2">
+
+
+        <com.planty.app.customviews.F1TextViewRegular
+            android:id="@+id/tk5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+
+            android:paddingLeft="1dp"
+            android:paddingTop="14dp"
+            android:text="Suitable Products" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="@dimen/margin_5"
+            android:background="@drawable/rounded_edit_text"
+
+            >
+            <EditText
+                android:id="@+id/tk4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:layout_marginTop="5dp"
+
+
+                android:background="@null"
+
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textSize="15dp"
+                />
+            <Button
+                android:layout_below="@+id/tk4"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:text="Add"
+                android:textAllCaps="false"
+                android:background="#f44242"
+                android:textColor="@color/white2"
+                android:textSize="10dp"
+
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+
+                />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/endimage"
+        android:layout_below="@+id/linar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.planty.app.customviews.F1TextViewRegular
+            android:id="@+id/txt13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et12"
+            android:layout_marginLeft="15dp"
+
+            android:paddingLeft="1dp"
+            android:paddingTop="14dp"
+            android:text="Shop Image" />
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/txt13"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:background="@drawable/camera"
+            android:paddingLeft="10dp" />
+
+    </LinearLayout>
+            <include layout="@layout/common_btn_ly_2"/>
+
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

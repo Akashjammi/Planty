@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.planty.app.fragments.main.Inactive">
+
+    <FrameLayout
+        android:id="@+id/tabstatus"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/topbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+
+                android:text="Enabled"
+                android:textColor="@color/bg_green"
+                android:textSize="@dimen/text_large" />
+            <TextView
+                android:id="@+id/spinner_choice"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+               android:textColor="@color/light_blue_video"
+                android:text="Edit"
+                android:layout_toLeftOf="@+id/spinner"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/margin_10"
+                />
+
+            <Spinner
+                android:layout_alignParentRight="true"
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+
+                android:visibility="invisible"
+
+
+
+
+                />
+
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/tabstatus"
+        android:background="@color/gray"
+
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rec_items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabstatus"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:background="@color/bg_grey_3">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

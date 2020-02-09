@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:id="@+id/frame_parent_ly"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/toolbar_bg">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/bck"
+                android:layout_centerVertical="true"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/left_arrow"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/margin_10"
+                />
+
+            <ImageView
+                android:layout_toRightOf="@+id/bck"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_logo"
+                android:foregroundGravity="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="@dimen/margin_20"
+
+                />
+
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/header_ly"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/frame_parent_ly"
+        android:background="@drawable/home_card_bg"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.planty.app.customviews.F1TextViewBold
+                android:id="@+id/information_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:text="SELLER INFORMATION"
+                android:textColor="@color/text_kind_grey"
+                android:textSize="@dimen/text_smallx" />
+
+            <LinearLayout
+                android:id="@+id/information_indicator_ly"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.planty.app.customviews.F1TextViewBold
+                android:id="@+id/category_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:text="SELLER CATEGORY"
+                android:textColor="@color/text_kind_grey"
+                android:textSize="@dimen/text_smallx" />
+
+            <LinearLayout
+                android:id="@+id/category_indicator_ly"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.planty.app.customviews.F1TextViewBold
+                android:id="@+id/product_details_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:text="PRODUCT DETAILS"
+                android:textColor="@color/text_kind_grey"
+                android:textSize="@dimen/text_smallx" />
+
+            <LinearLayout
+                android:id="@+id/product_detail_indicator_ly"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_ly">
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.planty.app.customclass.ActiveInactive">
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/toolbar_bg"
+
+        >
+        <ImageView
+             android:id="@+id/back_img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/left_arrow"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            />
+        <com.planty.app.customviews.F1TextViewBold
+            android:id="@+id/texttoolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Mobile Accessories"
+            android:textSize="@dimen/text_large"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white2"
+            android:layout_toRightOf="@+id/back_img"
+            android:visibility="visible"
+
+            />
+        <com.planty.app.customviews.F1EditTextRegular
+            android:id="@+id/searchtoolbar"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="@color/white_2"
+            android:hint="Search "
+
+            android:textSize="@dimen/text_large"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/bg_black"
+            android:layout_toRightOf="@+id/back_img"
+            android:visibility="gone"
+            android:foregroundGravity="left"
+            android:maxLength="10"
+
+            />
+        <ImageView
+            android:id="@+id/searchtb"
+            android:layout_toLeftOf="@+id/cart_tb"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/search_white"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            />
+        <ImageView
+            android:id="@+id/cart_tb"
+            android:layout_alignParentRight="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/toolbarright"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            />
+
+
+    </RelativeLayout>
+<FrameLayout
+    android:id="@+id/activeframe"
+    android:layout_below="@+id/topbar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"></FrameLayout>
+  </RelativeLayout>

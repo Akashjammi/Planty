@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingTop="5dp"
+    android:paddingRight="10dp">
+
+    <CheckBox
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:buttonTint="@color/gray"
+        />
+
+    <com.planty.app.customviews.F1TextViewRegular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        android:text="mobile"
+        android:textColor="@color/text_kind_grey"
+        android:textSize="@dimen/text_small" />
+
+</LinearLayout>

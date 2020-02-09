@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@color/white2"
+    android:layout_marginTop="@dimen/margin_5"
+
+    >
+
+    <RelativeLayout
+
+        android:layout_marginRight="@dimen/margin_10"
+        android:id="@+id/right_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/left_rl"
+
+        >
+        <ImageView
+            android:layout_marginTop="@dimen/margin_15"
+            android:id="@+id/im1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/tick"
+            android:layout_alignParentRight="true"
+            />
+
+        <com.planty.app.customviews.F1TextViewRegular
+            android:layout_below="@+id/im1"
+            android:id="@+id/cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rs 240.00 Per Pc"
+            android:gravity="right"
+           android:textSize="@dimen/text_small"
+            android:textColor="@color/bg_green"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="@dimen/margin_5"
+
+
+
+
+            />
+        <com.planty.app.customviews.F1TextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cost"
+            android:text="(GST 12%)"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_5"
+            android:textSize="@dimen/text_smalla"
+            android:id="@+id/gst"
+            android:textColor="@color/gray"
+
+            />
+
+
+    </RelativeLayout>
+
+<LinearLayout
+    android:id="@+id/check"
+    android:layout_marginTop="@dimen/margin_10"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/checkbox_img"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/unchecked"
+        android:visibility="visible"
+        />
+
+
+</LinearLayout>
+    <RelativeLayout
+        android:layout_toRightOf="@id/check"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:id="@+id/left_rl"
+        android:layout_marginTop="@dimen/margin_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+        <com.planty.app.customviews.F1TextViewRegular
+
+            android:id="@+id/productname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ETAR ET-R887 WIRELESS-BT"
+            android:textSize="16sp"
+
+            />
+        <com.planty.app.customviews.F1TextViewRegular
+            android:layout_below="@+id/productname"
+            android:id="@+id/producttype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Portable Mini S"
+            android:textSize="14sp"
+
+            />
+        <com.planty.app.customviews.F1TextViewRegular
+            android:layout_below="@+id/producttype"
+            android:id="@+id/productid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ET-R887,Quantity-55,SENNHEISER"
+            android:layout_marginTop="@dimen/margin_5"
+            android:textSize="12sp"
+            android:textColor="@color/grey_divider_1"
+
+            />
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/divider_grey"
+        android:layout_marginTop="@dimen/margin_30"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bg_grey_1"
+        android:layout_below="@+id/left_rl"
+        />
+    <RelativeLayout
+
+        android:layout_below="@+id/divider_grey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.planty.app.customviews.F1TextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Offer available"
+            android:textSize="@dimen/text_small"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:gravity="center"
+            android:textColor="@color/orange"
+
+            android:id="@+id/offer"
+            />
+            <LinearLayout
+                android:layout_alignParentRight="true"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#00B5AE"
+                >
+                <ImageView
+
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/cancel"
+                    android:foregroundGravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_20"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Deactivate"
+                    android:textColor="@color/white2"
+                   android:gravity="center_vertical"
+                    android:textSize="@dimen/text_small"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="@dimen/margin_20"
+                    />
+
+
+
+            </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

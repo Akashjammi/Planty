@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/body_ly"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/proceed_ly"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <com.planty.app.customviews.F1TextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:text="Owner Name"
+                            android:textColor="@color/text_kind_grey"
+                            android:textSize="@dimen/text_small" />
+
+                        <com.planty.app.customviews.F1EditTextRegular
+                            android:id="@+id/owner_name_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/rounded_edit_text"
+
+                            android:padding="10dp"
+                            android:textColor="@color/text_title_grey"
+                            android:textColorHint="@color/et_hint_color"
+                            android:textSize="@dimen/text_small" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <com.planty.app.customviews.F1TextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:text="Shop Name"
+                            android:textColor="@color/text_kind_grey"
+                            android:textSize="@dimen/text_small" />
+
+                        <com.planty.app.customviews.F1EditTextRegular
+                            android:id="@+id/shop_name_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/rounded_edit_text"
+
+                            android:padding="10dp"
+                            android:textColor="@color/text_title_grey"
+                            android:textColorHint="@color/et_hint_color"
+                            android:textSize="@dimen/text_small" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <com.planty.app.customviews.F1TextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:text="Area Name"
+                            android:textColor="@color/text_kind_grey"
+                            android:textSize="@dimen/text_small" />
+
+                        <com.planty.app.customviews.F1EditTextRegular
+                            android:id="@+id/shop_area_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/rounded_edit_text"
+
+                            android:padding="10dp"
+                            android:textColor="@color/text_title_grey"
+                            android:textColorHint="@color/et_hint_color"
+                            android:textSize="@dimen/text_small" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.planty.app.customviews.F1TextViewRegular
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="3dp"
+                                android:text="City"
+                                android:textColor="@color/text_kind_grey"
+                                android:textSize="@dimen/text_small" />
+
+                            <com.planty.app.customviews.F1EditTextRegular
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/rounded_edit_text"
+                                android:padding="10dp"
+
+                                android:textColor="@color/text_title_grey"
+                                android:textSize="@dimen/text_small" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.planty.app.customviews.F1TextViewRegular
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="3dp"
+                                android:text="Pincode"
+                                android:textColor="@color/text_kind_grey"
+                                android:textSize="@dimen/text_small" />
+
+                            <com.planty.app.customviews.F1EditTextRegular
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/rounded_edit_text"
+                                android:inputType="number"
+                                android:padding="10dp"
+                                android:maxLength="6"
+                                android:text=""
+                                android:textColor="@color/text_title_grey"
+                                android:textSize="@dimen/text_small" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <com.planty.app.customviews.F1TextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:text="Phone Number"
+                            android:textColor="@color/text_kind_grey"
+                            android:textSize="@dimen/text_small" />
+
+                        <com.planty.app.customviews.F1EditTextRegular
+                            android:id="@+id/phone_number_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/rounded_edit_text"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:padding="10dp"
+                            android:textColor="@color/text_title_grey"
+                            android:textColorHint="@color/et_hint_color"
+                            android:textSize="@dimen/text_small" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <com.planty.app.customviews.F1TextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:text="Alternative Number"
+                            android:textColor="@color/text_kind_grey"
+                            android:textSize="@dimen/text_small" />
+
+                        <com.planty.app.customviews.F1EditTextRegular
+                            android:id="@+id/phone_number_et_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/rounded_edit_text"
+                            android:inputType="number"
+                            android:padding="10dp"
+                            android:maxLength="10"
+                            android:textColor="@color/text_title_grey"
+                            android:textColorHint="@color/et_hint_color"
+                            android:textSize="@dimen/text_small" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.planty.app.customviews.F1TextViewRegular
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="3dp"
+                                android:text="Shop Open time"
+                                android:textColor="@color/text_kind_grey"
+                                android:textSize="@dimen/text_small" />
+
+                            <com.planty.app.customviews.F1TextViewRegular
+                                android:id="@+id/et8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/rounded_edit_text"
+                                android:padding="10dp"
+                                android:text="00:00"
+
+                                android:textColor="@color/text_title_grey"
+                                android:textSize="@dimen/text_small" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.planty.app.customviews.F1TextViewRegular
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="3dp"
+                                android:text="Shop Close Time"
+                                android:textColor="@color/text_kind_grey"
+                                android:textSize="@dimen/text_small" />
+
+                            <com.planty.app.customviews.F1TextViewRegular
+                                android:id="@+id/et9"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/rounded_edit_text"
+                                android:inputType="number"
+                                android:padding="10dp"
+                                android:text="00:00"
+                                android:textColor="@color/text_title_grey"
+                                android:textSize="@dimen/text_small" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ly"
+                        android:layout_below="@+id/linear3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        >
+                        <TimePicker
+                            android:id="@+id/simpleTimePicker"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/linear3"
+                            android:layout_marginTop="8dp"
+                            android:timePickerMode="spinner" />
+s
+                        <TextView
+                            android:id="@+id/set"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="SET"
+                            android:textSize="15dp"
+                            android:gravity="center"
+
+                            />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <com.planty.app.customviews.F1TextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:text="GST Number"
+                            android:textColor="@color/text_kind_grey"
+                            android:textSize="@dimen/text_small" />
+
+                        <com.planty.app.customviews.F1EditTextRegular
+                            android:id="@+id/gst_number_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/rounded_edit_text"
+
+                            android:padding="10dp"
+                            android:maxLength="15"
+                            android:inputType="text"
+                            android:textColor="@color/text_title_grey"
+                            android:textColorHint="@color/et_hint_color"
+                            android:textSize="@dimen/text_small" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <com.planty.app.customviews.F1TextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:text="Shop Establishment Year"
+                            android:textColor="@color/text_kind_grey"
+                            android:textSize="@dimen/text_small" />
+
+                        <com.planty.app.customviews.F1EditTextRegular
+                            android:id="@+id/shop_year_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/rounded_edit_text"
+
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:padding="10dp"
+                            android:textColor="@color/text_title_grey"
+                            android:textColorHint="@color/et_hint_color"
+                            android:textSize="@dimen/text_small" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="30dp"
+                        android:orientation="vertical">
+
+                        <com.planty.app.customviews.F1TextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:text="Shop Image"
+                            android:textColor="@color/text_kind_grey"
+                            android:textSize="@dimen/text_small" />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/camera" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+
+
+        <include layout="@layout/common_btn_ly_2" />
+
+
+    </RelativeLayout>
+</LinearLayout>
